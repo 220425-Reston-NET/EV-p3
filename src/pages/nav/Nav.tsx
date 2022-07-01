@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Nav() {
   return (
     // <head>
-    <nav  className="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar  navbar-expand-lg navbar-dark bg-warning">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -31,7 +33,22 @@ function Nav() {
                 <big>Shop</big>
               </Link>
             </li>
+            <li>
+              <Link to="signup" className="nav-link">
+                <big>Sign up</big>
+              </Link>
+            </li>
+            <br />
+            <br />
           </ul>
+          {/* <div className="socialmedia-div">
+            <a
+              href="https://www.instagram.com/essentialvibes1/"
+              className="ig-a"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+          </div> */}
         </div>
       </div>
     </nav>

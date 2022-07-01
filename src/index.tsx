@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <App />
+    {/* <socialFollow/> */}
     </BrowserRouter>
    
   </React.StrictMode>
