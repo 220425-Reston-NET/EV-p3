@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./ShopPage.css";
 
 function ShopPage() {
   let userEmail = "";
@@ -29,9 +30,14 @@ function ShopPage() {
   }
   return (
     <div>
+      <h2 className="h1-style">
+        Please login using your signed up information
+      </h2>
+
       <form onSubmit={onSubmit}>
+        <br />
+        <br />
         <div className="inner-form-login">
-          <h2>Please login using your signed up information</h2>
           {/* check for erro then display it => set error in else  */}
           {/* {error != "" ? <div className="error">{error}</div> : ""} */}
           {/* name="pokeName" onChange={updatePokeName} */}
@@ -55,17 +61,26 @@ function ShopPage() {
           </div>
           {/* <Link className="poke-link" to={`/drug${userEmail}`}> */}
           {/* <button>{userEmail}</button> */}
-          <input type={"submit"} value={"Sign in"} />
+          <input type={"submit"} value={"Sign in"} className="sinput" />
           {/* </Link> */}
         </div>
       </form>
-      <div>
-          <p>New to Essential Needs?  <Link className="signup-signin" to={`/signup`}>
-            {/* <button>{userEmail}</button> */}
-            <input type={"submit"} value={"Sign up"} />
-          </Link></p>
-      </div>
+      <br />
+  
 
+      <div>
+        <aside className="asside">
+          New to Luscious Blends?{" "}
+          <Link className="signup-signin" to={`/signup`}>
+            {/* <button>{userEmail}</button> */}
+            <input
+              type={"submit"}
+              value={"Please click here to sign up"}
+              className="signup-link"
+            />
+          </Link>
+        </aside>
+      </div>
     </div>
   );
 }

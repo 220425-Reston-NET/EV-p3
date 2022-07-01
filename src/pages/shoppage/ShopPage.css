@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+body {
+  background-color: #f6eee0;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 6px;
+  background-color: #5d59af;
+  color: w;
+}
+
+.inner-form-login {
+  width: 450px;
+  height: 420px;
+  margin: auto;
+  border-radius: 4px;
+  /* SAME AS 16px */
+  padding: 1rem;
+
+  background-color: #868b8e;
+}
+
+/* .login-welcome {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding: 2rem;
+  margin: 3rem;
+} */
+
+input:hover {
+  color: rgb(11, 66, 129);
+}
+.signup-link {
+  width: 100%;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 2px;
+  background-color: #f6eee0;
+  border: none;
+  color: #81b622;
+}
+
+.asside {
+  padding: 10px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

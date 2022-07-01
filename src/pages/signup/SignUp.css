@@ -1,0 +1,17 @@
+.inner-form {
+  width: 450px;
+  height: 520px;
+  margin: auto;
+  border-radius: 4px;
+  /* SAME AS 16px */
+  padding: 1rem;
+
+  background-color: #868b8e;
+}
+
+.siignup {
+  font-weight: inherit;
+  color: #81b622;
+  display: flex;
+  justify-content: center;
+}

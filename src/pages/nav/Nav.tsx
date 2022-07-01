@@ -7,7 +7,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 function Nav() {
   return (
     // <head>
-    <nav className="navbar  navbar-expand-lg navbar-dark bg-warning">
+    <nav className="navbar  navbar-expand-lg navbar-dark bg-secondary">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -35,11 +35,43 @@ function Nav() {
             </li>
             <li>
               <Link to="signup" className="nav-link">
-                <big>Sign up</big>
+                {/* <big>Sign up</big> */}
               </Link>
             </li>
             <br />
+           
             <br />
+            <br />
+            <li>
+              <Link to="contact" className="nav-link">
+                <big>Contact us</big>
+              </Link>
+            </li>
+            <br />
+            <li>
+              <Link to="signup" className="nav-link">
+                {/* <big>Sign up</big> */}
+              </Link>
+            </li>
+            <br />
+            <li>
+              <Link to="about" className="nav-link">
+                <big>About us</big>
+              </Link>
+            </li>
+            <br />
+            <li>
+              <Link to="signup" className="nav-link">
+                {/* <big>Sign up</big> */}
+              </Link>
+            </li>
+            <br />
+            <br /> 
+            <li>
+              <Link to="store" className="nav-link">
+                <big>Shop as guest</big>
+              </Link>
+            </li>
           </ul>
           {/* <div className="socialmedia-div">
             <a

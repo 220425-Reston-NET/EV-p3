@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './SignUp.css'
 
 function SignUpPage() {
   let userName = "";
@@ -45,8 +46,8 @@ function SignUpPage() {
     <>
       <div>
         <form onSubmit={onSubmit}>
-          <h4 className="siignup-welcome">
-            Sign up for your Essential Needs account
+          <h4 className="siignup">
+            Sign up for your free Luscious Blends account
           </h4>
           <div className="inner-form">
             <div className="form-group">
