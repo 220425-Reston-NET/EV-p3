@@ -29,7 +29,8 @@ function ShopPage() {
     e.preventDefault();
   }
   return (
-    <div>
+    <div className="signin-image">
+
       <h2 className="h1-style">
         Please login using your signed up information
       </h2>

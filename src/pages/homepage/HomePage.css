@@ -5,9 +5,10 @@
   border-radius: 10px;
 }
 .home-image {
-  background-image: url(/src/medtraklogo/essential_vibes.png);
+  background-image: url(/src/medtraklogo/essential_vibes_5.png);
   background-repeat: no-repeat;
   background-position: top;
+  background-color: #d3efdf;
   /* margin: 200px; */
   /* padding: 0; */
 
@@ -15,26 +16,29 @@
   /* background-size: cover; */
   /* background-size: "cover"; */
   width: 100%;
-  height: 400px;
+  height: 500px;
 
   background-size: 30rem;
   overflow: scroll;
 }
 
 footer {
-  background-color: #81b622;
+  background-color: #d3efdf;
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  /* height: 2.5rem;  */
 }
-.h1-style{
+.h1-style {
   font-weight: inherit;
-  color: #81b622;
+  color: #142d6e;
   display: flex;
   justify-content: center;
+  font-family: cursive;
+}
+body{
+  background-color: #D3EFDF;
 }
 
-.essential-needs-intro{
-  background-color: #5D59AF;
-  font-size: larger;
-  color: white;
-}

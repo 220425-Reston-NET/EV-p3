@@ -4,7 +4,7 @@ import "./Contact.css";
 function ContactusPage() {
   return (
     <div className="contact-div">
-      <h2 className="contact-welcome"> Contact us for more information</h2>
+      <h2 className="h2-header"> Contact us for more information</h2>
 
       <p className="help-para">
         For the fastest service, please call the appropriate phone number listed
@@ -12,7 +12,7 @@ function ContactusPage() {
       </p>
       <br />
       <div className="bs">
-        <h1>MedTrak Members</h1>
+        <h2 className="h2-header">MedTrak Members</h2>
         <p>
           Call for Luscious Blendsk Beneficiary Customer Service or Technical Support for
           the MedTrak Beneficiary Program. (887) 363-1303 TTY users call: (897)
@@ -20,7 +20,7 @@ function ContactusPage() {
         </p>
       </div>
       <div className="bs2">
-        <h1>Non-Luscious Blends Members</h1>
+        <h2 className="h2-header">Non-Luscious Blends Members</h2>
         <p>
           Call for non-members Beneficiary Customer Service or Technical Support
           for the MedTrak Beneficiary Program. (887) 363-1303 TTY users call:

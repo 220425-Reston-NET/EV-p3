@@ -1,7 +1,17 @@
-.contact-div{
-    margin: 30px;
-    padding: 30px;
-    background-color: #5D59AF;
-    font-size: larger;
-    color: white;
+.contact-div {
+  margin: 30px;
+  padding: 30px;
+  background-color: #d3efdf;
+  font-size: larger;
+  /* color: white; */
 }
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+
+.h2-header{
+    font-family: 'Cedarville Cursive', cursive;
+    /* font-style: inherit; */
+  }

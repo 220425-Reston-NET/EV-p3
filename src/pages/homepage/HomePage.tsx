@@ -11,8 +11,8 @@ function HomePage() {
         <h1 className="h1-style">
           Home for holistic healing through aromatherapy
         </h1>
-        <div className="essential-needs-intro">
-          <h1>What is aromatherapy?</h1>
+        {/* <div className="essential-needs-intro">
+          <h1>What is Aromatherapy?</h1>
           <p>
             Aromatherapy is a holistic healing treatment that uses natural plant
             extracts to promote health and well-being. Sometimes it’s called
@@ -20,7 +20,7 @@ function HomePage() {
             medicinally to improve the health of the body, mind, and spirit. It
             enhances both physical and emotional health. Healthline
           </p>
-          <h1>About essential oils</h1>
+          <h1>About Essential Oils</h1>
           <p className="about-paragraph">
             What are essential oils? Essential oils are a form of alternative
             medicine that employs concentrated plants extracts to support health
@@ -42,7 +42,7 @@ function HomePage() {
             <li>Chamomile: improves mood and relaxation</li>
             <li>Tea Tree: fights infections and boosts immunity</li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <footer>Luscious Blends by Essential Vibes 2022 made with 🤎</footer>
     </>

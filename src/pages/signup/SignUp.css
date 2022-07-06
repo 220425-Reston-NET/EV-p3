@@ -6,7 +6,8 @@
   /* SAME AS 16px */
   padding: 1rem;
 
-  background-color: #868b8e;
+  background-color: #D3EFDF;
+
 }
 
 .siignup {
@@ -14,4 +15,10 @@
   color: #81b622;
   display: flex;
   justify-content: center;
+}
+.signup-image{
+  background-image: url(/src/medtraklogo/image-4.png);
+  width: 100;
+  height: 100vh;
+
 }

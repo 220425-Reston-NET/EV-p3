@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Lavender",
+    "price": 4.99,
+    "imgUrl": "/imgs/lavender.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Chamomile",
+    "price": 7.99,
+    "imgUrl": "/imgs/Chamomile-Guide-To-Essential-Oils-Andrew-Weil-M.D_507268037-600x450.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bergamot",
+    "price": 6.99,
+    "imgUrl": "/imgs/bergamot_5000x 2.webp"
+  },
+  {
+    "id": 4,
+    "name": "Eucalyptus",
+    "price": 7.99,
+    "imgUrl": "/imgs/Eucalyptus-Oil_-Guide-To-Essential-Oils_-Andrew-Weil-M.D_911691436-1024x768_1024x1024.webp"
+  },
+  {
+    "id": 5,
+    "name": "Lemongrass",
+    "price": 8.99,
+    "imgUrl": "/imgs/lemongrassoil.webp"
+  },
+  {
+    "id": 6,
+    "name": "Sandalwood",
+    "price": 8.99,
+    "imgUrl": "/imgs/1624605411_oil_big_450.jpg"
+  }
+]

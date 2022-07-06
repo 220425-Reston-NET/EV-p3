@@ -3,11 +3,20 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { Button, Container } from "react-bootstrap";
+import { useShoppingCart } from "../../context/ShopingCartContext";
+import './Nav.css'
 
 function Nav() {
+  const { openCart, cartQuantity} = useShoppingCart()
+
   return (
     // <head>
-    <nav className="navbar  navbar-expand-lg navbar-dark bg-secondary">
+    <>
+        <div  className="nav-image"></div>
+
+    <nav className="navbar  navbar-custom navbar-expand-lg navbar-dark " >
+
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -23,6 +32,11 @@ function Nav() {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+          <li>
+              <Link to="contact" className="nav-link">
+              {/* <div  className="nav-image"></div> */}
+              </Link>
+            </li>
             <li className="nav-item">
               <Link to="/" className="nav-link">
                 <big>Home</big>
@@ -30,7 +44,7 @@ function Nav() {
             </li>
             <li>
               <Link to="shop" className="nav-link">
-                <big>Shop</big>
+                <big>Sign in</big>
               </Link>
             </li>
             <li>
@@ -44,7 +58,7 @@ function Nav() {
             <br />
             <li>
               <Link to="contact" className="nav-link">
-                <big>Contact us</big>
+                <big>Contact Us</big>
               </Link>
             </li>
             <br />
@@ -56,7 +70,7 @@ function Nav() {
             <br />
             <li>
               <Link to="about" className="nav-link">
-                <big>About us</big>
+                <big>About Us</big>
               </Link>
             </li>
             <br />
@@ -69,10 +83,12 @@ function Nav() {
             <br /> 
             <li>
               <Link to="store" className="nav-link">
-                <big>Shop as guest</big>
+                <big>Store</big>
               </Link>
             </li>
+           
           </ul>
+          
           {/* <div className="socialmedia-div">
             <a
               href="https://www.instagram.com/essentialvibes1/"
@@ -83,7 +99,10 @@ function Nav() {
           </div> */}
         </div>
       </div>
+      
     </nav>
+    
+    </>
     // </head>
   );
 }

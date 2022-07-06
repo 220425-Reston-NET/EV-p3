@@ -44,7 +44,7 @@ function SignUpPage() {
   }
   return (
     <>
-      <div>
+      <div className="signup-image">
         <form onSubmit={onSubmit}>
           <h4 className="siignup">
             Sign up for your free Luscious Blends account
