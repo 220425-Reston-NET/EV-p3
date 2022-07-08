@@ -11,7 +11,7 @@ function ContactusPage() {
         below.
       </p>
       <br />
-      <div className="bs">
+      <div className="b3">
         <h2 className="h2-header">MedTrak Members</h2>
         <p>
           Call for Luscious Blendsk Beneficiary Customer Service or Technical Support for
@@ -19,7 +19,7 @@ function ContactusPage() {
           540-6261 24 hours a day, 7 days a week.
         </p>
       </div>
-      <div className="bs2">
+      <div className="bs3">
         <h2 className="h2-header">Non-Luscious Blends Members</h2>
         <p>
           Call for non-members Beneficiary Customer Service or Technical Support

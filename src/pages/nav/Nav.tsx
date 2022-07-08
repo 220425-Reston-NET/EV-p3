@@ -6,6 +6,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { Button, Container } from "react-bootstrap";
 import { useShoppingCart } from "../../context/ShopingCartContext";
 import './Nav.css'
+// import image from '../..medtraklogo/image.png';
 
 function Nav() {
   const { openCart, cartQuantity} = useShoppingCart()
@@ -13,11 +14,15 @@ function Nav() {
   return (
     // <head>
     <>
-        <div  className="nav-image"></div>
+        
 
     <nav className="navbar  navbar-custom navbar-expand-lg navbar-dark " >
 
+{/* <img src={image} height={100} width={100} /> */}
       <div className="container-fluid">
+            {/* <div  className="nav-image"></div> */}
+            <img className="nav-image" src="https://media.discordapp.net/attachments/991356486393528363/994277618260136077/essential_vibes_7.png" alt="" />
+
         <button
           className="navbar-toggler"
           type="button"
@@ -31,6 +36,8 @@ function Nav() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
+        <div  className="nav-image"></div>
+
           <ul className="navbar-nav">
           <li>
               <Link to="contact" className="nav-link">
@@ -86,19 +93,27 @@ function Nav() {
                 <big>Store</big>
               </Link>
             </li>
+            <br />
+            <li>
+              <Link to="lavender" className="nav-link">
+                {/* <big>Lavender</big> */}
+              </Link>
+            </li>
            
           </ul>
+        
           
-          {/* <div className="socialmedia-div">
+         
+        </div>
+      </div>
+      <div className="socialmedia-div">
             <a
-              href="https://www.instagram.com/essentialvibes1/"
+              href="https://www.instagram.com/lblnds/"
               className="ig-a"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-          </div> */}
-        </div>
-      </div>
+          </div>
       
     </nav>
     

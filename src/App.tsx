@@ -12,11 +12,12 @@ import AboutUs from "./pages/aboutus/AboutUs";
 import { ShoppingCartProvider } from "./context/ShopingCartContext";
 import { Store } from "./pages/storepage/Store";
 import { Container } from "react-bootstrap";
+import LavenderBen from "./components/LavenderBen";
 
 
 function App() {
   return (
-    <>
+    <body>
     <ShoppingCartProvider>
       <Nav />
       <Container className="mb-4">
@@ -27,11 +28,13 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/contact" element={<ContactusPage />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/lavender" element={<LavenderBen />} />
+
 
       </Routes>
       </Container>
       </ShoppingCartProvider>
-    </>
+    </body>
   );
 }
 

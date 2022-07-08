@@ -23,18 +23,31 @@
   align-items: end;
 }
 
-
-
 .navbar-custom {
   background-color: #25385d;
   /* font: 1em sans-serif; */
   font-family: cursive;
 }
 
-.nav-image{
-  background-image: url(/src/medtraklogo/essential_vibes_8.png);
-  background-repeat: no-repeat;
-  background-position: top;
+/* body{
   background-color: #d3efdf;
+  essential_vibes_7.png
+} */
 
+.nav-image {
+  
+  height: 90px;
+
+  
+}
+body {
+  background-color: #d3efdf;
+}
+
+.socialmedia-div{
+  margin: 2rem;
+  /* display: flex;
+  
+  justify-content: end;
+  align-items: flex-end; */
 }

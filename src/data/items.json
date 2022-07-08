@@ -3,13 +3,16 @@
     "id": 1,
     "name": "Lavender",
     "price": 4.99,
-    "imgUrl": "/imgs/lavender.jpg"
+    "imgUrl": "/imgs/lavender.jpg",
+    "benefit": "/lavender"
+    
   },
   {
     "id": 2,
     "name": "Chamomile",
     "price": 7.99,
     "imgUrl": "/imgs/Chamomile-Guide-To-Essential-Oils-Andrew-Weil-M.D_507268037-600x450.jpg"
+
   },
   {
     "id": 3,

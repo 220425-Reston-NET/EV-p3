@@ -49,16 +49,21 @@ function AboutUs() {
           </ul>
         </div>
         <p>
-          <h2>Our Vision</h2>To promote health and a greater overall well-being for
-          every person we touch.
+          <h1 className="h1-header">Our Vision</h1>To promote health and a
+          greater overall well-being for every person we touch.
         </p>
+        <h1 className="h1-header">Our Mission</h1>
         <p>
-          <h3>Our Mission</h3>To provide an enriched array of essential oil products
-          and information to people of all backgrounds and lifestyles.
+          To provide an enriched array of essential oil products and information
+          to people of all backgrounds and lifestyles.
         </p>
+        
       </div>
       <div className="info-div">
-        <p> <h2> Visit Us:</h2>  1234 Revature Lane. #1000, New York, NY 94220</p>
+        <p>
+          {" "}
+          <h2> Visit Us:</h2> 1234 Revature Lane. #1000, New York, NY 94220
+        </p>
         <p>
           {" "}
           <h2>Email:</h2> Lusciousblends@ev.com{" "}
@@ -67,16 +72,35 @@ function AboutUs() {
           <h2>Call:</h2> (255) 352-6258
         </p>
       </div>
+      
       {/* our instagram logo */}
-      {/* <div className="info-div-ig">
+      <div className="info-div-ig">
         <h5>Check out our instagram</h5>
-            <a
-              href="https://www.instagram.com/essentialvibes1/"
-              className="ig-a"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
-          </div>  */}
+        <a href="https://www.instagram.com/lblnds/" className="ig-a">
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+      </div>
+      <p>
+          <h1 className="h1-header"> Essential Vibes Team🤝🤲🙌🎉</h1>
+          <h4 className="h1-header">BA team</h4>
+          <span>
+            <ul>
+              <li>Ashley</li>
+              <li>Essence</li>
+              <li>Gilbert</li>
+              <li>Morin</li>
+            </ul>
+          </span>
+          <span>
+            <h4 className="h1-header">DEV team</h4>
+            <ul>
+              <li>Israel</li>
+              <li>Mahamadou</li>
+              <li>Jordan</li>
+              <li>Daniel</li>
+            </ul>
+          </span>
+        </p>
     </div>
   );
 }
