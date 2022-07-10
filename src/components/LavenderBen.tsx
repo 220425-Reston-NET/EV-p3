@@ -6,7 +6,7 @@ function LavenderBen() {
   return (
     <div className="benefit-div">
       <div className="lavender">
-        <h1 className="h1-header">Levender benefits</h1>
+        <h1 className="h1-header">Lavender benefits</h1>
         <p>
           Lavender essential oil is one of the most popular and versatile
           essential oils used in aromatherapy. Distilled from the plant
@@ -19,8 +19,14 @@ function LavenderBen() {
         <p>
           Lavender essential oil may cause skin irritation or an allergic
           reaction in some individuals. If you experience nausea, vomiting, or a
-          headache after using lavender, discontinue use immediately. Topical
-          use: diffuser or humidifier
+          headache after using lavender, discontinue use immediately.
+        </p>
+        <h1 className="h1-header">Special precautions </h1>
+        <p>
+          There are some precautions you should take if you are taking any
+          prescription medications, pregnant or breastfeeding. Don’t apply
+          essential oils directly to your skin. Always use a carrier oil to
+          dilute the oils. Topical use: diffuser or humidifier
         </p>
       </div>
       <Link className="signup-signin" to={`/store`}>

@@ -99,21 +99,30 @@ function Nav() {
                 {/* <big>Lavender</big> */}
               </Link>
             </li>
-           
+            <li>
+              <Link to="lgrass" className="nav-link">
+                {/* <big>Lemongrass</big> */}
+              </Link>
+            </li>
+            <li>
+              <Link to="bergamot" className="nav-link">
+                {/* <big>Bergamot</big> */}
+              </Link>
+            </li>
           </ul>
         
           
          
         </div>
       </div>
-      <div className="socialmedia-div">
+      {/* <div className="socialmedia-div">
             <a
               href="https://www.instagram.com/lblnds/"
               className="ig-a"
             >
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
+              <FontAwesomeIcon icon={faInstagram} size="5x" />
             </a>
-          </div>
+          </div> */}
       
     </nav>
     

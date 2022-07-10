@@ -13,6 +13,8 @@ import { ShoppingCartProvider } from "./context/ShopingCartContext";
 import { Store } from "./pages/storepage/Store";
 import { Container } from "react-bootstrap";
 import LavenderBen from "./components/LavenderBen";
+import LemonGrass from "./components/LemonGrass";
+import Bergamot from "./components/Bergamot";
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route path="/contact" element={<ContactusPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/lavender" element={<LavenderBen />} />
+        <Route path="/lgrass" element={<LemonGrass />} />
+        <Route path="/bergamot" element={<Bergamot />} />
 
 
       </Routes>

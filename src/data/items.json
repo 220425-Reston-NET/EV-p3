@@ -4,7 +4,7 @@
     "name": "Lavender",
     "price": 4.99,
     "imgUrl": "/imgs/lavender.jpg",
-    "benefit": "/lavender"
+    "benefit": "/components/LavenderBen.tsx"
     
   },
   {
@@ -18,7 +18,9 @@
     "id": 3,
     "name": "Bergamot",
     "price": 6.99,
-    "imgUrl": "/imgs/bergamot_5000x 2.webp"
+    "imgUrl": "/imgs/bergamot_5000x 2.webp",
+    "benefit":"/components/Bergamot.tsx"
+
   },
   {
     "id": 4,

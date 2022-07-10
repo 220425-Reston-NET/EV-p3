@@ -50,17 +50,18 @@ export function StoreItem({
             <span className="fs-2">{name}</span>
             <span className="ms-2 text-muted">{fomatCurrency(price)}</span>
           </Card.Title>
+
           <Link className="signup-signin" to={"/lavender"} >
             
-            {/* <button>{userEmail}</button> */}
             <input
-              type={"submit"}
-              value={" click here to learn more"}
-              className="signup-link"
+             type={"submit"}
+               value={" click here to learn more"}
+               className="signup-link"
             />
-            {/* {benefit} */}
-          </Link>
+             {/* {benefit} */}
+          </Link> 
           <br />
+         
 
           <div className="mt-auto">
             {quantity === 0 ? (
@@ -102,6 +103,7 @@ export function StoreItem({
           </div> */}
           </div>
         </Card.Body>
+        
       </Card>
     </>
   );

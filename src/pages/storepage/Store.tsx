@@ -77,7 +77,7 @@ export function Store() {
         {storeItems.map((item) => (
           // start rendering json like this {JSON.stringify(item)} between <Col>s
           <Col key={item.id}>
-            <StoreItem {...item} />
+            <StoreItem  {...item} />
           </Col>
         ))}
       </Row>

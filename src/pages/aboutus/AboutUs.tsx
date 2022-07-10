@@ -81,11 +81,12 @@ function AboutUs() {
         </a>
       </div>
       <p>
-          <h1 className="h1-header"> Essential Vibes Team🤝🤲🙌🎉</h1>
+          <h1 className="h1-header"> The Essential Vibes Team🤝🤲🙌🎉</h1>
           <h4 className="h1-header">BA team</h4>
           <span>
-            <ul>
+            <ul className="h1-header">
               <li>Ashley</li>
+              <li>Kameron</li>
               <li>Essence</li>
               <li>Gilbert</li>
               <li>Morin</li>
@@ -93,7 +94,7 @@ function AboutUs() {
           </span>
           <span>
             <h4 className="h1-header">DEV team</h4>
-            <ul>
+            <ul className="h1-header">
               <li>Israel</li>
               <li>Mahamadou</li>
               <li>Jordan</li>
