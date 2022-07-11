@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import './SignUp.css'
+import { Link } from "react-router-dom";
+import "./SignUp.css";
 
 function SignUpPage() {
   let userName = "";
   let userAddress = "";
   let userEmail = "";
   let userPassword = "";
+  const [checked, setChecked] = useState(false);
+  const handleChange = () => {
+    setChecked(!checked);
+  };
 
   const [users, setUsers] = useState([
     {
@@ -90,6 +95,17 @@ function SignUpPage() {
                 value={"Submit"}
                 className="submit-style"
               />
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={handleChange}
+                />
+                Check here to indicate that you have read and agree to the terms
+                and conditions of Luscious Blends
+              </label>
             </div>
           </div>
         </form>

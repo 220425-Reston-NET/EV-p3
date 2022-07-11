@@ -61,6 +61,7 @@ function ShopPage() {
             ></input>
           </div>
           {/* <Link className="poke-link" to={`/drug${userEmail}`}> */}
+          <br />
           {/* <button>{userEmail}</button> */}
           <input type={"submit"} value={"Sign in"} className="sinput" />
           {/* </Link> */}
@@ -71,12 +72,11 @@ function ShopPage() {
 
       <div>
         <aside className="asside">
-          New to Luscious Blends?{" "}
           <Link className="signup-signin" to={`/signup`}>
             {/* <button>{userEmail}</button> */}
             <input
               type={"submit"}
-              value={"Please click here to sign up"}
+              value={"New to Luscious Blends? Please click here to sign up"}
               className="signup-link"
             />
           </Link>

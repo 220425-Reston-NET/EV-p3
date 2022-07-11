@@ -12,7 +12,7 @@ function ContactusPage() {
       </p>
       <br />
       <div className="b3">
-        <h2 className="h2-header">MedTrak Members</h2>
+        <h2 className="h2-header">Luscious Blends Members</h2>
         <p>
           Call for Luscious Blendsk Beneficiary Customer Service or Technical Support for
           the MedTrak Beneficiary Program. (887) 363-1303 TTY users call: (897)

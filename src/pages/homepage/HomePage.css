@@ -21,13 +21,30 @@
   background-size: 30rem;
   overflow: scroll;
 }
+.home2-image {
+  background-image: url(https://images.lifestyleasia.com/wp-content/uploads/2019/10/07192005/shutterstock_1169638921-2048x1219.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-color: #d3efdf; */
+  /* margin: 200px; */
+  /* padding: 0; */
+
+  /* background-position: "center"; */
+  /* background-size: cover; */
+  /* background-size: "cover"; */
+  width: 100%;
+  height: 500px;
+
+  background-size: 30rem;
+  /* overflow: scroll; */
+}
 
 footer {
   background-color: #d3efdf;
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   width: 85%;
   /* height: 2.5rem;  */
 }
@@ -39,6 +56,6 @@ footer {
   font-family: cursive;
 }
 
-body{
+body {
   background-color: #d3efdf;
 }
