@@ -15,6 +15,8 @@ import { Container } from "react-bootstrap";
 import LavenderBen from "./components/LavenderBen";
 import LemonGrass from "./components/LemonGrass";
 import Bergamot from "./components/Bergamot";
+import Checkout from "./pages/checkout/Checkout";
+import ThankYou from "./pages/thankyou/ThankYou";
 
 
 function App() {
@@ -33,6 +35,9 @@ function App() {
         <Route path="/lavender" element={<LavenderBen />} />
         <Route path="/lgrass" element={<LemonGrass />} />
         <Route path="/bergamot" element={<Bergamot />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/thankyou" element={<ThankYou />} />
+
 
 
       </Routes>

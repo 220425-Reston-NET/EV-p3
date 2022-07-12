@@ -1,0 +1,22 @@
+div.thank-image {
+  background-position: center;
+  width: 50%;
+}
+
+.thankyou-image {
+  background-image: url(/src/medtraklogo/thankyou.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #d3efdf;
+  /* margin: 200px; */
+  /* padding: 0; */
+
+  /* background-position: "center"; */
+  /* background-size: cover; */
+  /* background-size: "cover"; */
+  width: 100%;
+  height: 100vh;
+
+  background-size: 70rem;
+  overflow: scroll;
+}

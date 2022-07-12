@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ShopPage.css";
 
 function ShopPage() {
@@ -27,10 +27,30 @@ function ShopPage() {
   //   onSubmit function here
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    fetch(
+      "http://medtrack-env.eba-sqq54brs.us-east-1.elasticbeanstalk.com/User/SearchUserByEmailAndPassword?" +
+        new URLSearchParams({
+          Email: userEmail,
+          Password: userPassword,
+        })
+      // {}
+    )
+      .then((response) => response.json())
+      .then((users) => {
+        // change/ attached user to user id in db
+        setUser((previousData) => users);
+
+        goToNewCustInfo();
+      });
   }
+
+  const navigate = useNavigate();
+  const goToNewCustInfo = () => {
+    navigate("/store");
+  };
   return (
     <div className="signin-image">
-
       <h2 className="h1-style">
         Please login using your signed up information
       </h2>
@@ -68,7 +88,6 @@ function ShopPage() {
         </div>
       </form>
       <br />
-  
 
       <div>
         <aside className="asside">

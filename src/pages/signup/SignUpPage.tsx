@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 
 function SignUpPage() {
@@ -46,12 +46,36 @@ function SignUpPage() {
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     // stop page from refreshing
     e.preventDefault();
+
+    fetch(
+      "http://medtrack-env.eba-sqq54brs.us-east-1.elasticbeanstalk.com/User/Adduser",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: userName,
+          address: userAddress,
+          email: userEmail,
+          pasword: userPassword,
+        }),
+      }
+    );
+    goToNewCustInfo();
   }
+  const navigate = useNavigate();
+  const goToNewCustInfo = () => {
+    navigate("/shop");
+  };
+
   return (
     <>
       <div className="signup-image">
         <form onSubmit={onSubmit}>
-          <h4 className="siignup">
+          <br />
+          <h4 className="h1-style">
             Sign up for your free Luscious Blends account
           </h4>
           <div className="inner-form">
@@ -90,6 +114,15 @@ function SignUpPage() {
                 name="userPassword"
                 onChange={UpDateCustomerPassword}
               />
+              <label htmlFor="password">Confirm Password</label>
+              <input
+                className="form-control"
+                type="password"
+                name="userPassword"
+                // onChange={UpDateCustomerPassword}
+              />
+              <br />
+              
               <input
                 type={"submit"}
                 value={"Submit"}
