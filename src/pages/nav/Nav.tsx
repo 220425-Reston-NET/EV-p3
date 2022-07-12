@@ -118,7 +118,7 @@ function Nav() {
               href="https://www.instagram.com/lblnds/"
               className="ig-a"
             >
-              <FontAwesomeIcon icon={faInstagram} size="5x" />
+              <FontAwesomeIcon icon={faInstagram} size="3x" />
             </a>
           </div>
       </nav>

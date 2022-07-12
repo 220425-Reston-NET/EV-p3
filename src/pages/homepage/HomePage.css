@@ -55,6 +55,13 @@ footer {
   justify-content: center;
   font-family: cursive;
 }
+/* style h4 in store page */
+.h4-style{
+  font-weight: inherit;
+  color: #142d6e;
+  font-family: cursive;
+
+}
 
 body {
   background-color: #d3efdf;

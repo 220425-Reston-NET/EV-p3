@@ -9,7 +9,8 @@ type StoreItemProps = {
   id: number;
   name: string;
   price: number;
-  benefit?: string;
+  size: string;
+  benefit: string;
   imgUrl: string;
 };
 
@@ -18,6 +19,7 @@ export function StoreItem({
   name,
   price,
   benefit,
+  size,
   imgUrl,
 }: StoreItemProps) {
   // after context is done get all of the functions here
@@ -48,20 +50,21 @@ export function StoreItem({
         <Card.Body className="d-flex flex-column">
           <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
             <span className="fs-2">{name}</span>
-            <span className="ms-2 text-muted">{fomatCurrency(price)}</span>
+            <span className="ms-2 text-muted">
+              {fomatCurrency(price)} <br />
+              {size}
+            </span>
           </Card.Title>
 
-          <Link className="signup-signin" to={"/lavender"} >
-            
+          <Link className="signup-signin" to={benefit}>
             <input
-             type={"submit"}
-               value={" click here to learn more"}
-               className="signup-link"
+              type={"submit"}
+              value={" click here to learn more"}
+              className="signup-link"
             />
-             {/* {benefit} */}
-          </Link> 
+            {/* {benefit} */}
+          </Link>
           <br />
-         
 
           <div className="mt-auto">
             {quantity === 0 ? (
@@ -103,7 +106,6 @@ export function StoreItem({
           </div> */}
           </div>
         </Card.Body>
-        
       </Card>
     </>
   );

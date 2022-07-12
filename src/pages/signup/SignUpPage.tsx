@@ -3,10 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 
 function SignUpPage() {
-  let userName = "";
-  let userAddress = "";
-  let userEmail = "";
-  let userPassword = "";
+  let uName = "";
+  let uAddress = "";
+  let uEmail = "";
+  let uPassword = "";
   const [checked, setChecked] = useState(false);
   const handleChange = () => {
     setChecked(!checked);
@@ -23,23 +23,23 @@ function SignUpPage() {
   ]);
 
   function UpDateCustomerName(e: React.ChangeEvent<HTMLInputElement>) {
-    userName = e.target.value;
-    console.log(userName);
+    uName = e.target.value;
+    console.log(uName);
   }
 
   function UpDateCustomerEmail(e: React.ChangeEvent<HTMLInputElement>) {
-    userEmail = e.target.value;
-    console.log(userEmail);
+    uEmail = e.target.value;
+    console.log(uEmail);
   }
 
   function UpDateCustomerAddress(e: React.ChangeEvent<HTMLInputElement>) {
-    userAddress = e.target.value;
-    console.log(userAddress);
+    uAddress = e.target.value;
+    console.log(uAddress);
   }
 
   function UpDateCustomerPassword(e: React.ChangeEvent<HTMLInputElement>) {
-    userPassword = e.target.value;
-    console.log(userPassword);
+    uPassword = e.target.value;
+    console.log(uPassword);
   }
 
   // submit event handler
@@ -48,18 +48,19 @@ function SignUpPage() {
     e.preventDefault();
 
     fetch(
-      "http://medtrack-env.eba-sqq54brs.us-east-1.elasticbeanstalk.com/User/Adduser",
+      "http://Essentialvibesproject-env.eba-mmmzminf.us-east-1.elasticbeanstalk.com/api/User/AddUser",
       {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
+          // Essentialvibesproject-env.eba-mmmzminf.us-east-1.elasticbeanstalk.com/api/User/AddUser
         },
         body: JSON.stringify({
-          name: userName,
-          address: userAddress,
-          email: userEmail,
-          pasword: userPassword,
+          name: uName,
+          address: uAddress,
+          email: uEmail,
+          pasword: uPassword,
         }),
       }
     );
@@ -122,7 +123,7 @@ function SignUpPage() {
                 // onChange={UpDateCustomerPassword}
               />
               <br />
-              
+
               <input
                 type={"submit"}
                 value={"Submit"}

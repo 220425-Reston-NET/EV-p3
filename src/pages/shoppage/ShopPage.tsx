@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import "./ShopPage.css";
 
 function ShopPage() {
-  let userEmail = "";
-  let userPassword = "";
+  let uEmail = "";
+  let uPassword = "";
 
   // make a function if loging info matches our user in db = storepage else:
   // user not found message display.
@@ -16,23 +16,23 @@ function ShopPage() {
   });
 
   function GetCustomerEmail(e: React.ChangeEvent<HTMLInputElement>) {
-    userEmail = e.target.value;
-    console.log(userEmail);
+    uEmail = e.target.value;
+    console.log(uEmail);
   }
 
   function GetCustomerPassword(e: React.ChangeEvent<HTMLInputElement>) {
-    userPassword = e.target.value;
-    console.log(userPassword);
+    uPassword = e.target.value;
+    console.log(uPassword);
   }
   //   onSubmit function here
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     fetch(
-      "http://medtrack-env.eba-sqq54brs.us-east-1.elasticbeanstalk.com/User/SearchUserByEmailAndPassword?" +
+      "http://Essentialvibesproject-env.eba-mmmzminf.us-east-1.elasticbeanstalk.com/api/User/SearchUserByEmailAndPassword?" +
         new URLSearchParams({
-          Email: userEmail,
-          Password: userPassword,
+          Email: uEmail,
+          Password: uPassword,
         })
       // {}
     )

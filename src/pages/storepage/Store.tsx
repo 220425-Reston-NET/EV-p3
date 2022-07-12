@@ -12,6 +12,7 @@ import { useShoppingCart } from "../../context/ShopingCartContext";
 // import storeItems from "../data/items.json";
 // import StoreItem from "../component/StoreItem";
 import storeItems from "../../data/items.json";
+import "./Store.css";
 
 export function Store() {
   const { openCart, cartQuantity } = useShoppingCart();
@@ -19,25 +20,36 @@ export function Store() {
   return (
     <>
       {/* sticky="top" so you can see cart as you browse   bg-secondary shadow-sm mb-3*/}
-      
-      <Navbar className="justify-content-end " style={{ width: "100%" }} sticky="top" >
+      <div></div>
+      <label className="labelClass" htmlFor="site-search">
+        <h4 className="h4-style">Search for your favorite Essential Oil:</h4>
+      </label>
+      <input type="search" id="site-search" name="q" placeholder="Lavender" className="search"></input>
+
+      <button>Search</button>
+
+      <Navbar
+        className="justify-content-end "
+        style={{ width: "100%" }}
+        sticky="top"
+      >
         {/* <Nav.Link to="/store" as={NavLink}>
             Store
           </Nav.Link> */}
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-          <Nav className="container-fluid"></Nav>
-        
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+        <Nav className="container-fluid"></Nav>
+
         <Container>
           {cartQuantity > 0 && (
             <Button
               onClick={openCart}
-               style={{ position: "relative"}}
+              style={{ position: "relative" }}
               // style={{ position: "absolute" }}
               className="rounded-circle"
             >
@@ -70,14 +82,13 @@ export function Store() {
           )}
         </Container>
       </Navbar>
-      
-      
+
       <Row md={2} xs={1} lg={3} className=" g-3">
         {/* loop over items array */}
         {storeItems.map((item) => (
           // start rendering json like this {JSON.stringify(item)} between <Col>s
           <Col key={item.id}>
-            <StoreItem  {...item} />
+            <StoreItem {...item} />
           </Col>
         ))}
       </Row>

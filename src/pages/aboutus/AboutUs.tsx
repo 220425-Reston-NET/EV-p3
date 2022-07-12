@@ -77,7 +77,7 @@ function AboutUs() {
       <div className="info-div-ig">
         <h5>Check out our instagram</h5>
         <a href="https://www.instagram.com/lblnds/" className="ig-a">
-          <FontAwesomeIcon icon={faInstagram} size="2x" />
+          <FontAwesomeIcon icon={faInstagram} size="6x" />
         </a>
       </div>
       <p>

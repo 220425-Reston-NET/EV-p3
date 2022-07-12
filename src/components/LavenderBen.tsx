@@ -29,7 +29,7 @@ function LavenderBen() {
           dilute the oils. Topical use: diffuser or humidifier
         </p>
       </div>
-      <Link className="signup-signin" to={`/store`}>
+      <Link className="signup-signin" to={`/store`} >
         {/* <button>{userEmail}</button> */}
         <input
           type={"submit"}

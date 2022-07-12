@@ -17,6 +17,9 @@ import LemonGrass from "./components/LemonGrass";
 import Bergamot from "./components/Bergamot";
 import Checkout from "./pages/checkout/Checkout";
 import ThankYou from "./pages/thankyou/ThankYou";
+import Eucalyptus from "./components/Eucalyptus";
+import Chamomile from "./components/Chamomile";
+import Sandalwood from "./components/Sandalwood";
 
 
 function App() {
@@ -37,6 +40,12 @@ function App() {
         <Route path="/bergamot" element={<Bergamot />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/thankyou" element={<ThankYou />} />
+        <Route path="/eucalyptus" element={<Eucalyptus />} />
+        <Route path="/chamomile" element={<Chamomile/>} />
+        <Route path="/sandalwood" element={<Sandalwood/>} />
+
+
+
 
 
 

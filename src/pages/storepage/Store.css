@@ -1,0 +1,25 @@
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+.labelClass {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+.search{
+    background-color: aliceblue;
+    width: 30%;
+}
+button{
+    padding: 8px;
+    background-color: rgb(40, 40, 127);
+    color: aliceblue;
+    width: 100px;
+    border-radius: 15px;
+}
