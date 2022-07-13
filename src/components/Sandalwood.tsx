@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Sandalwood() {
   return (
-    <div className="benefit-div">
+    <div className="fade">
     <div className="lavender">
       <h1 className="h1-header">Sandalwood benefits</h1>
       <p>

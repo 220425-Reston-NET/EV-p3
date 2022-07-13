@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Bergamot() {
   return (
-    <div className="benefit-div">
+    <div className="fade">
       <div className="lavender">
         <h1 className="h1-header">Bergamot benefits</h1>
         <p>

@@ -4,7 +4,7 @@ import "./LavenderBen.css";
 
 function LavenderBen() {
   return (
-    <div className="benefit-div">
+    <div className="fade">
       <div className="lavender">
         <h1 className="h1-header">Lavender benefits</h1>
         <p>

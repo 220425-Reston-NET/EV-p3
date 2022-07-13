@@ -88,27 +88,32 @@ function ShopPage() {
           <aside className="asside">
           <Link  className="signup-signin" to={""} >
             <input
+            type={"button"}
               value={"Forget your password?"}
               // className="signup-link"
             />
           </Link>
           </aside>
-         
-        </div>
-      </form>
-      <br />
-
-      <div>
-        <aside className="asside">
+          <aside className="asside">
           <Link className="signup-signin" to={`/signup`}>
             {/* <button>{userEmail}</button> */}
             <input
               type={"submit"}
               value={"New to Luscious Blends? Please click here to sign up"}
-              className="signup-link"
+              // className="signup-link"
             />
           </Link>
         </aside>
+         
+        </div>
+      
+      </form>
+      
+      <br />
+      
+
+      <div>
+        
       </div>
     </div>
   );
