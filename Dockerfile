@@ -1,4 +1,3 @@
-# building react app => node
 FROM node:alpine AS build
 
 WORKDIR /app
@@ -32,5 +31,4 @@ EXPOSE 80
 
 # now run nginx
 CMD ["nginx","-g", "daemon off;"]
-
 

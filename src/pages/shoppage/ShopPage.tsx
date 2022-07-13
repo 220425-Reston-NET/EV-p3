@@ -85,6 +85,15 @@ function ShopPage() {
           {/* <button>{userEmail}</button> */}
           <input type={"submit"} value={"Sign in"} className="sinput" />
           {/* </Link> */}
+          <aside className="asside">
+          <Link  className="signup-signin" to={""} >
+            <input
+              value={"Forget your password?"}
+              // className="signup-link"
+            />
+          </Link>
+          </aside>
+         
         </div>
       </form>
       <br />

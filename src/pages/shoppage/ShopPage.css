@@ -77,3 +77,13 @@ input,
 label {
   margin: .4rem 0;
 }
+
+.forgetpwd{
+  width: 14rem;
+  background-color: #d3efdf;
+  color: #d3efdf;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
