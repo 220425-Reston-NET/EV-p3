@@ -4,11 +4,10 @@ phases:
   install:
     commands:
       - echo "Install Nodejs and NPM"
-      - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
+      - sudo apt install npm nodejs
   pre_build:
     commands:
       - echo "Installing dependencies back"
-      - nvm install node
       - npm install
   build:
     commands:
