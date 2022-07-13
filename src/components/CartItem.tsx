@@ -49,11 +49,11 @@ export function CartItem({ id, quantity }: CartItemProps) {
           </Button>
         </div>
       </Stack>
-      <div>
+      {/* <div>
         <Link to={`/checkout`}>
           <input type={"submit"} value={"Proceed to Checkout"} />
         </Link>
-      </div>
+      </div> */}
     </>
   );
 }

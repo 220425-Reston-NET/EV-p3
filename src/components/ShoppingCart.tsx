@@ -4,6 +4,7 @@ import { useShoppingCart } from "../context/ShopingCartContext";
 import { fomatCurrency } from "../utilities/fomatCurrency";
 import { CartItem } from "./CartItem";
 import StoreItems from "../data/items.json";
+import { Link } from "react-router-dom";
 
 type ShoppingCartProviderProps = {
   open: boolean;
@@ -32,7 +33,13 @@ export function ShoppingCart({ open }: ShoppingCartProviderProps) {
                 }, 0)
               )}
             </div>
+            
           </Stack>
+          <div>
+        <Link to={`/checkout`}>
+          <input type={"submit"} value={"Proceed to checkout  "} />
+        </Link>
+      </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>
