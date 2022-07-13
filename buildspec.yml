@@ -5,7 +5,7 @@ phases:
     commands:
       - echo "Install Nodejs and NPM"
       - sudo apt update
-      - sudo apt install nodejs npm
+      - sudo apt install -y nodejs npm
       - node -v
       - npm -v
   pre_build:
